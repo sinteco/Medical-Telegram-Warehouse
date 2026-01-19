@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: telegram
+    description: Raw data from Telegram channels
+    database: medical_warehouse
+    schema: raw
+    tables:
+      - name: telegram_messages
+        description: Raw JSON and extracted fields from Telegram messages
+        columns:
+          - name: channel_name
+            tests: 
+              - not_null
+          - name: message_id
+            tests:
+              - not_null
+          - name: message_date
+          - name: message_text
