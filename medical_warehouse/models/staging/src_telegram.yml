@@ -17,3 +17,11 @@ sources:
               - not_null
           - name: message_date
           - name: message_text
+      
+      - name: yolo_detections
+        description: Object detection results from YOLO
+        columns:
+          - name: channel_name
+          - name: message_id
+          - name: detected_class
+          - name: image_category
