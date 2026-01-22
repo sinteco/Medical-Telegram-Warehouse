@@ -40,3 +40,6 @@ data/
 
 # Mac
 .DS_Store
+medical_scraper.session
+*.pt
+.tmp_dagster_home_*/
